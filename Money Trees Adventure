@@ -1,0 +1,19 @@
+
+print('Welcome to Money Trees')
+
+money_plan = input('The goal in this game is to build wealth. How are you going to build wealth?\n a) 40 hr/week job \n b) Plant Money Trees\n')
+
+if money_plan == 'a': 
+  print('You\'ve fallen into the rat race. Game over')
+else:
+  funding_plan = input('Your path to wealth continues. How will you fund your money trees endeavours?\n a) 40 hr/week job \n b) < 20 hr/week job(s) \n')
+  if funding_plan == 'a':
+    print('You fell into the rat race. Game Over')
+  else: 
+    expenses = input('Your path to wealth continues. How will you spend the money you make from your part-time job(s)? \n a) Buy an expensive house \n b) Buy other things that people with money buy? \n c) Build businesses and buy assets\n')
+    if expenses == 'a':
+      print('No wealth for you. Game over')
+    elif expenses == 'b':
+      print('Now wealth for you. Game over')
+    else: 
+      print('Congratulations. You\'re planting money trees and building wealth. You win')
